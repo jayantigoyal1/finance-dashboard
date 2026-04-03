@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Dashboard from './components/Dashboard'
 import TransactionsTable from './components/TransactionsTable'
 import Insights from './components/Insights'
+import Footer from './components/Footer'
 
 // ── Inner App (needs context access) ─────────────────────────
 function AppInner() {
@@ -23,6 +24,7 @@ function AppInner() {
         {activeTab === 'transactions' && <TransactionsTable />}
         {activeTab === 'insights'     && <Insights />}
       </main>
+      <Footer />
     </div>
   )
 }
